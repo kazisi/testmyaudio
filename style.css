@@ -1,0 +1,235 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+#main {
+    height: 300px;
+    background-color: #333;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#888')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#888');
+    /* For Non-CSS3 Browsers */
+    background: #2695f0;
+    /* For IE */
+    filter: 
+        progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3F4F5', endColorstr='#DADADA');
+    /* For WebKit Browsers */
+    background: 
+        -webkit-gradient(linear, left top, left bottom, from(rgb(90, 85, 85)), to(#333333));
+    /* For Firefox 3.6+ */
+    background: 
+        -moz-linear-gradient(top,  #F3F4F5,  #DADADA);
+}
+
+nav {
+    margin: 5px;
+    width: 100%;
+}
+
+#timer, #timer1 {
+    display: block;
+    color: teal;
+    text-align: center;
+    height: 28px;
+    padding-top: 12px;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+#playPauseBtn, #playPauseBtn1 {
+    display: block;
+    background: #656565;
+    color: #FFF;
+    text-align: center;
+    padding: 9px;
+    border: 1px solid #DADADA;
+    cursor: pointer;
+    width: 20px;
+    border-radius: 100000px;
+   
+}
+
+#playPauseBtn:hover {
+    background: #FFF;
+    color: #333;
+    border-radius: 10000px;
+}
+
+#playPauseBtn:active {
+    background: #333;
+    color: #999;
+}
+#previous {
+    display: block;
+    background: #656565;
+    color: #FFF;
+    text-align: center;
+    padding: 9px;
+    border: 1px solid #DADADA;
+    cursor: pointer;
+    width: 20px;
+    border-radius: 100000px;
+    
+
+}
+
+#previous:hover {
+    background: #FFF;
+    color: #333;
+    border-radius: 10000px;
+}
+
+#previous:active {
+    background: #333;
+    color: #999;
+}
+#forward {
+    display: block;
+    background: #656565;
+    color: #FFF;
+    text-align: center;
+    padding: 9px;
+    border: 1px solid #DADADA;
+    cursor: pointer;
+    width: 20px;
+    border-radius: 100000px;
+    
+
+}
+
+#forward:hover {
+    background: #FFF;
+    color: #333;
+    border-radius: 10000px;
+}
+
+#forward:active {
+    background: #333;
+    color: #999;
+}
+#scrubberContainer {
+    position: relative;
+    width: 500px;
+    height: 2px;
+    padding: 4px;
+    margin: 6px;
+    background: rgb(71, 59, 59);
+    border-radius: 10px;
+    top: 1px;
+}
+
+#scrubberBar {
+    position: absolute;
+    position: '';
+background-color: coral;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    bottom: 8px;
+    position: relative;
+    
+    
+}
+#dot{
+    position: absolute;
+    background: yellowgreen;
+    width: 0px;
+    height: 2px;
+    border-radius: 10px;
+    position: '';
+}
+h3{
+    margin: 0;
+    padding: 0;
+}
+#range{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #333 #333 #777 #333;
+    border-radius: 25px;
+    width: 100px;
+    position: absolute;
+    height: 13px;
+    background-color: #8e8d8d;
+    background: url('https://scontent.fdac9-1.fna.fbcdn.net/v/t1.15752-9/cp0/120805841_335996397614545_8309201379147328048_n.png?_nc_cat=103&_nc_sid=ae9488&_nc_ohc=P5_v2_B4pr0AX9FckVH&_nc_ht=scontent.fdac9-1.fna&oh=f97d0f334b1f6c8d86d3216cdf6e484d&oe=5F9F5F81') repeat top left;
+    box-shadow: inset 0 1px 5px 0px rgba(0, 0, 0, .5), 
+             0 1px 0 0px rgba(250, 250, 250, .5);
+    left: 20px;
+  }
+  #blow button{
+    transform: scale(1.5);
+      color: white;
+      background-color: teal;
+      border-radius: 10px;
+      transition: 0.5s;
+
+  }
+  #blow button:hover{
+      transform: scale(2.0);
+  }
+  #blow button:active{
+      background-color: rgb(74, 173, 173);
+      border-radius: 0px;
+  }
+#blow{
+    background-color: #333;
+    padding: 6% 0%;
+    
+    margin: 0;
+    right: 5px;
+    text-align: center;
+    position: relative;
+    
+}
+
+#drop{
+    display: block;
+    
+    position: absolute;
+}
+.x{
+
+background-color: #333;
+flex-direction: row;
+margin-left: 45%;
+margin-right: 55%;
+top: 1px;
+width: 70px;
+height: 35px;
+border-radius: 100px;
+text-align: center;
+align-items: center;
+vertical-align: middle;
+color: white;
+display: none;
+position: fixed;
+padding-top: 13px;
+}

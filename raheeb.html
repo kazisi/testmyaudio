@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title class="blue">Audio Player</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+   <style>
+
+
+   </style>
+</head>
+<body>
+    <section id="main">
+        <audio id="videoPlayer" width="640" height="480" src="Pal - Jalebi Arijit Singh Shreya Ghoshal Rhea & Varun Javed - Mohsin (1).mp3">
+            <source src="Pal - Jalebi Arijit Singh Shreya Ghoshal Rhea & Varun Javed - Mohsin (1).mp3" ></source>
+
+            
+            This is a video for html5 browsers.
+        </audio>
+      
+         <audio class="btn2" src="Tum Hi Aana Marjaavaan Riteish D, Sidharth M, Tara S Jubin Nautiyal,Payal Dev,Kunaal V.mp3"></audio>
+        <nav id="vidControls" class="clearfix">
+            <div  class="x"></div>  <div id="previous"><i class="far fa-backward"></i></div>    <div id="playPauseBtn" class="left"><i class="far fa-play-circle"></i></div> 
+           <br> 
+        <div id="scrubberContainer" class="left">
+                <div id="dot" dragable="true">
+                    
+                    <div id="scrubberBar">
+
+</div></div>
+            </div>
+            <div class="timer" class="left">
+                <span></span>
+            </div>
+            <div id="forward"><i class="far fa-forward"></i></div>  
+
+  <div id="blow">
+    <div id="previous" class="sound"> <i class="fal fa-volume"></i></div> <div id="previous" class="mute"> <i class="fal fa-volume-mute"></i></div>
+  <div class="drop">
+    <button onclick="zero ()"  id="zero" draggable="true">0</button> 
+  <button onclick="one ()" id="one" draggable="true">1</button>
+ <button onclick="two ()" id="two" draggable="true">2</button>
+ <button onclick="three ()" id="three" draggable="true">3</button>
+ <button onclick="four ()" id="four" draggable="true">4</button>
+ <button onclick="five ()" id="five" draggable="true">5</button>
+ <button onclick="six ()" id="six" draggable="true">6</button>
+ <button onclick="seven ()" id="seven" draggable="true">7</button>
+ <button onclick="eight ()" id="eight" draggable="true">8</button>
+ <button onclick="nine ()" id="nine" draggable="true">9</button>
+ <button onclick="ten ()" id="ten" onclick="ten0 ()" draggable="true">10</button>
+
+</div>
+        </div>
+  
+</nav>
+    </section>
+    
+   
+    
+    <!-- JAVASCRIPT -->
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.custom.min.js"></script>
+    
+    <script  type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
+    <script >
+        $(document).ready(function(){
+            VP.init();
+        });
+        document.getElementById('main').addEventListener('dblclick', () => {
+    document.getElementById('main').requestFullscreen().catch((e) => {
+       console.log(e)
+    })
+
+});
+
+
+       
+    </script>
+    <script src="script.js">
+       
+    </script>
+  <script src="script2.js"></script>
+ 
+  <!-- END JAVASCRIPT -->
+
+</body>
